@@ -127,6 +127,16 @@ ipython_config.py
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
 
+# Data (keep samples only)
+data/raw/*
+data/cleaned/*
+!data/raw/sample_*.csv
+!data/cleaned/quality_report.csv
+
+# Power BI autosave/temp
+*.tmp
+*.pbix.~*
+
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
